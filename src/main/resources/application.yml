@@ -21,7 +21,7 @@ spring:
     show-sql: true
   mail:
     host: smtp.gmail.com
-    password: bzqjuitwmfduuors
+    password: 
     port: 587
     properties:
       mail:
@@ -29,7 +29,7 @@ spring:
           auth: true
           starttls:
             enable: true
-    username: iqbaljawaid.5822@gmail.com
+    username: 
     
 app:
   messages:
