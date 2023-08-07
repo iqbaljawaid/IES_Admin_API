@@ -1,0 +1,58 @@
+server:
+  port: 9091
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: admin
+    url: jdbc:mysql://localhost:3306/major_project
+    username: iqbal
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: allow
+        event:
+          merge:
+            entity_copy_observer: allow
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: bzqjuitwmfduuors
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: iqbaljawaid.5822@gmail.com
+    
+app:
+  messages:
+    adminLoggedIn: Admin Logged in
+    userLoggedIn: User Logged in
+    badCredentials: Bad Credentials
+    mailSubject: Mail from Global IT
+    mailNotSent: Mail not sent due to some internal reason
+    mailSent: Mail Sent please unlock your Account
+    onlyAdminCreateAccounts: Only admin can create account
+    accountAlreadyUnlocked: Your account is already unlocked
+    accountUnlockedSuccess: Your account has been unlocked ...now you can login
+    passwordsDontMatch: Password don't match...please type properly
+    noRecords: No records found
+    planCreated: New plan created
+    planNotCreated: Due to some reason plan is not created
+    successfullyEdited: You have successfully edited your account
+    accountSwitchSuccess: Account Action is switched
+    accountSwitchFailure : Account Action is not switched
+    planSwitchSuccess: Plan Action is switched
+    planSwitchFailure : Plan Action is not switched
+    
+    
+   
+    
+ 
